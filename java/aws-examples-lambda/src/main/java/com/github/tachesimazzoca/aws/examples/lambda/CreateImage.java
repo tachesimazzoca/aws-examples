@@ -15,8 +15,8 @@ import java.io.*;
 import java.net.URLDecoder;
 
 public class CreateImage implements RequestHandler<S3Event, String> {
-    public static final int OUTPUT_WIDTH = 100;
-    public static final int OUTPUT_HEIGHT = 100;
+    public static final int OUTPUT_WIDTH = 60;
+    public static final int OUTPUT_HEIGHT = 60;
     public static final String OUTPUT_FORMAT = null;
 
     public static final String RESPONSE_SUCCESS = "OK";
@@ -81,7 +81,7 @@ public class CreateImage implements RequestHandler<S3Event, String> {
             ObjectMetadata meta = new ObjectMetadata();
             meta.setContentType(format.getContentType());
 
-            String destKey = OUTPUT_DIRECTORY + basename + format.getExtension();
+            String destKey = OUTPUT_DIRECTORY + basename + "." + format.getExtension();
             s3Client.putObject(bucketName, destKey, thumbnail, meta);
 
             System.out.println("format: " + format);
