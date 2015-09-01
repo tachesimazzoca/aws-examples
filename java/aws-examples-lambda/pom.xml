@@ -30,6 +30,47 @@
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
         </dependency>
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.tachesimazzoca.aws.examples.lambda</groupId>
+            <artifactId>talend-system-routines</artifactId>
+            <version>0.0.0</version>
+            <!-- mvn install:install-file -->
+            <!--
+            <scope>system</scope>
+            <systemPath>${project.basedir}/talend/A_Basic_Job_0.1/lib/systemRoutines.jar</systemPath>
+            -->
+        </dependency>
+        <dependency>
+            <groupId>com.github.tachesimazzoca.aws.examples.lambda</groupId>
+            <artifactId>talend-user-routines</artifactId>
+            <version>0.0.0</version>
+            <!-- mvn install:install-file -->
+            <!--
+            <scope>system</scope>
+            <systemPath>${project.basedir}/talend/A_Basic_Job_0.1/lib/userRoutines.jar</systemPath>
+            -->
+        </dependency>
+        <dependency>
+            <groupId>com.github.tachesimazzoca.aws.examples.lambda</groupId>
+            <artifactId>talend-job</artifactId>
+            <version>0.0.0</version>
+            <!-- mvn install:install-file -->
+            <!--
+            <scope>system</scope>
+            <systemPath>${project.basedir}/talend/A_Basic_Job_0.1/A_Basic_Job/a_basic_job_0_1.jar</systemPath>
+            -->
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
